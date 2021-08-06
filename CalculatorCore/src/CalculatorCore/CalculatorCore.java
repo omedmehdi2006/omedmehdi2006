@@ -6,16 +6,16 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.concurrent.TimeUnit;
 import CalculatorCore.calculations;  
+
+
 public class CalculatorCore {
-	
 	public static void main(String[] args) throws IOException, InterruptedException {
 		
 		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		Calendar cal = Calendar.getInstance();
 		
 		//-------------------------------------------------------------------------------------------------------------------------------------//
-		System.out.println("Hello");
-		System.out.println("Welcome To ComputerCalculator!          v.pre1");
+		System.out.println("Welcome To ComputerCalculator!                 v.pre2");
 		System.out.println("Designed By Omed Dariab");
 		System.out.println("Made in 20/7/2021");
 		System.out.print("Today is ");
@@ -25,10 +25,9 @@ public class CalculatorCore {
 		System.out.println("");
 		System.out.println("");
 		
-		
 		TimeUnit.SECONDS.sleep(2);
 		
-		System.out.println("Hello");
+		
 		System.out.println("Type one of the following statements: start, stop or help");
 		startupQuestion();
 	}
@@ -36,7 +35,7 @@ public class CalculatorCore {
 		Scanner startup = new Scanner(System.in);
 		System.out.print("Enter input: ");
 		String s = startup.next();
-		
+		s.equalsIgnoreCase(null);	
 		
 		
 		if(s.equals("start")){
